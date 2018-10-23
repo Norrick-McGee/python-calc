@@ -10,6 +10,15 @@ class Calculator:
         times_triggered = False
         divide_triggered = False
 
+        def AC_press(self, AC):
+
+            self.add_triggered = False 
+            self.sub_triggered = False
+            self.times_triggered = False
+            self.divide_triggered = False
+            
+            self.number_entry.delete(0,"end")
+
         def number_press(self, value):
             
             entry_val = self.number_entry.get()
